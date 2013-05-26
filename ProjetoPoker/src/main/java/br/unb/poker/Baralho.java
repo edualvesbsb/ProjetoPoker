@@ -1,4 +1,4 @@
-package jogo;
+package br.unb.poker;
 
 
 import java.util.Random;
