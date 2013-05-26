@@ -1,5 +1,6 @@
 package br.unb.poker;
 
+
 public class ComparaJogos {
 	
 	Carta[] mao1 = new Carta[7];
@@ -59,7 +60,7 @@ public class ComparaJogos {
 		
 	}
 
-	 //Se a melhor m„o de cada jogador corresponder em peso, deve-se procurar por High Cards (famosos kickers)
+	 //Se a melhor m√£o de cada jogador corresponder em peso, deve-se procurar por High Cards (famosos kickers)
 
 		for(int i = 0; i < 5; i++){
 			if(mao1[i].getValor() > mao2[i].getValor()){
@@ -73,7 +74,7 @@ public class ComparaJogos {
 			
 		}
 		
-		return jogador1_mao; //Necess·rio para compilar
+		return jogador1_mao; //Necess√°rio para compilar
 		
 	}
 		 

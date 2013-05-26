@@ -1,6 +1,5 @@
 package br.unb.poker;
 
-
 public class Jogador {
 	
 	private String nome;

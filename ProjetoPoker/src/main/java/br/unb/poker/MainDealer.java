@@ -1,6 +1,7 @@
 package br.unb.poker;
 
 
+
 public class MainDealer {
 	
 	public static void main(String[] args) {

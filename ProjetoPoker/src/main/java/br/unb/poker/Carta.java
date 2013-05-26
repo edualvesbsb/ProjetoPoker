@@ -1,6 +1,5 @@
 package br.unb.poker;
 
-
 public class Carta {
 	
 	private String s_valor, s_naipe;
