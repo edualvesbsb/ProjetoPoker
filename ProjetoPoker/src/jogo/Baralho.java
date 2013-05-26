@@ -1,12 +1,13 @@
 package jogo;
 
+
 import java.util.Random;
 
 public class Baralho {
 	
-	public Carta[] baralho;
-	int cartaAtual;
-	Random r = new Random(); //Cria-se uma varíavel r aleatória
+	private Carta[] baralho;
+	private int cartaAtual;
+	private Random r = new Random(); //Cria-se uma varíavel r aleatória
 
 	public Baralho() //Construtor da classe Baralho
 	{
