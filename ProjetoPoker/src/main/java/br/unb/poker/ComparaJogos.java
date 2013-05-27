@@ -39,7 +39,7 @@ public class ComparaJogos {
 
 	public int determinaNiveldaMao(Carta[] mao, Carta[] Mesa) {
 
-		Achajogo jogos = new Achajogo(jogador1_mao, Mesa);
+		Achajogo jogos = new Achajogo(mao, Mesa);
 
 		return jogos.determinaMelhorMao();
 
@@ -57,7 +57,8 @@ public class ComparaJogos {
 
 			return jogador2_mao;
 
-		}
+	}
+		
 
 		// Se a melhor mão de cada jogador corresponder em peso, deve-se
 		// procurar por High Cards (famosos kickers)

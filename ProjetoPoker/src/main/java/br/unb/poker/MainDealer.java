@@ -10,7 +10,7 @@ public class MainDealer {
 
 	public static void main(String[] args) {
 
-		DBHandler dbHandler = new DBHandler(); 
+		DBHandler dbHandler = new DBHandler();
 		dbHandler.SetupDB();
 		dbHandler.SetupDBConsistencyLevel();
 
@@ -36,10 +36,10 @@ public class MainDealer {
 		cfPessoaDAO.update(cf1);
 
 		CfPessoa cf2 = new CfPessoa();
-		cf1.setKey("5");
-		cf1.setNome("Chucky");
-		cf1.setIdade("20");
-		cfPessoaDAO.update(cf1);
+		cf2.setKey("5");
+		cf2.setNome("Chucky");
+		cf2.setIdade("20");
+		cfPessoaDAO.update(cf2);
 
 		CfPessoa pessoa1 = cfPessoaDAO.read("3");
 		CfPessoa pessoa2 = cfPessoaDAO.read("5");
@@ -67,9 +67,9 @@ public class MainDealer {
 		ComparaJogos comparador = new ComparaJogos(jogadorA.getMao(),
 				jogadorB.getMao(), Mesa);
 
-		System.out.println("Nivel do jogo de" + jogadorA.getNickname() + ": "
+		System.out.println("Nivel do jogo de " + jogadorA.getNickname() + ": "
 				+ comparador.determinaNiveldaMao(jogadorA.getMao(), Mesa));
-		System.out.println("Nivel do jogo de" + jogadorB.getNickname() + ": "
+		System.out.println("Nivel do jogo de " + jogadorB.getNickname() + ": "
 				+ comparador.determinaNiveldaMao(jogadorB.getMao(), Mesa));
 
 		if (!comparador.determinaEmpate()) {
