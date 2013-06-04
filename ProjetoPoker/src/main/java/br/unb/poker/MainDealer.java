@@ -78,6 +78,9 @@ public class MainDealer {
 					+ ", " + comparador.determinaVencedor()[1]);
 
 		}
+		Model model = new Model(0, jogadorA.getFichas(), jogadorB.getFichas());
+		Controlador controlador = new Controlador(model);
+		TelaDoJogo tela = new TelaDoJogo(jogadorA, jogadorB, controlador);
 
 	}
 

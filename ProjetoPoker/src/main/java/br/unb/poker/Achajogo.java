@@ -447,9 +447,9 @@ public class Achajogo {
 
 		nivel[0] = achaPar(melhor_mao);
 
-		if (nivel[0] == true) {
+		if (nivel[0]) {
 			nivel[2] = achaTrinca(melhor_mao);
-			if (nivel[2] == true) {
+			if (nivel[2]) {
 				nivel[5] = achaFullHouse(melhor_mao);
 				nivel[6] = achaQuadra(melhor_mao);
 
@@ -459,7 +459,7 @@ public class Achajogo {
 		}
 
 		for (int i = 7; i > -1; i--) {
-			if (nivel[i] == true) {
+			if (nivel[i]) {
 				return i;
 			}
 		} // Este laço verifica qual o maior valor que contém true na variável

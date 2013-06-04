@@ -11,7 +11,7 @@ public class Baralho {
 	public Baralho() //Construtor da classe Baralho
 	{
 		String [] faces ={ "Ás", "Dois", "Três", "Quatro", "Cinco", "Seis", "Sete", "Oito", "Nove", "Dez", "Valete", "Dama", "Rei"};
-		String [] suits = {"Paus", "Ouro",  "Copas","Espada"};
+		String [] suits = {"Paus", "Ouro",  "Copas", "Espada"};
 		
 		baralho = new Carta[52];
 		cartaAtual = 0;
